@@ -1,0 +1,28 @@
+# Linux directory structure
+
+```
+/ (Root Directory)
+├── bin -> usr/bin          (คำสั่งพื้นฐานที่จำเป็นสำหรับ User ทุกคน)
+├── boot                    (ไฟล์ที่ใช้ในการ Boot ระบบ เช่น Kernel, GRUB)
+├── dev                     (ไฟล์อุปกรณ์ต่างๆ เช่น Disk, Keyboard, USB)
+├── etc                     (ที่เก็บไฟล์ Configuration ของระบบและ Software)
+├── home                    (Directory ส่วนตัวของ User ปกติ)
+├── lib -> usr/lib          (Shared Libraries ที่จำเป็นสำหรับระบบ)
+├── media                   (จุด Mount อุปกรณ์ถอดเสียบได้ เช่น USB, CD-ROM)
+├── mnt                     (จุด Mount ชั่วคราวสำหรับ System Admin)
+├── opt                     (ที่ติดตั้งซอฟต์แวร์เสริมจาก Third-party)
+├── proc                    (Virtual Filesystem เก็บข้อมูลสถานะของ Process และ Kernel)
+├── root                    (Home directory ของ User 'root' เท่านั้น)
+├── run                     (ข้อมูลที่เกิดขึ้นระหว่างการรันระบบในปัจจุบัน)
+├── sbin -> usr/sbin        (คำสั่งพื้นฐานสำหรับ System Admin เท่านั้น)
+├── srv                     (ข้อมูลสำหรับ Service ที่ระบบให้บริการ เช่น เว็บไซต์)
+├── sys                     (Virtual Filesystem เก็บข้อมูลเกี่ยวกับ Hardware)
+├── tmp                     (ไฟล์ชั่วคราวที่จะถูกลบเมื่อ Restart หรือตามระยะเวลา)
+├── usr                     (แหล่งรวมโปรแกรม, Libraries และเอกสารหลักของ User)
+│   ├── bin                 (คำสั่งโปรแกรมทั่วไป)
+│   ├── sbin                (คำสั่งโปรแกรมระดับระบบ)
+│   └── local               (โปรแกรมที่ Admin ติดตั้งเองภายในเครื่อง)
+└── var                     (ไฟล์ที่มีการเปลี่ยนแปลงบ่อย เช่น Log, Database, Mail)
+    ├── log                 (ไฟล์บันทึกเหตุการณ์ต่างๆ ของระบบ)
+    └── spool               (คิวงานต่างๆ เช่น งานพิมพ์ หรือ Email)
+```
