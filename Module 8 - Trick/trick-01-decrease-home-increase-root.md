@@ -30,7 +30,7 @@ umount /home
 # หรือ
 fuser -km /home
 ```
-> -k คือ kill process -m คือ moount path สามารถใช้รวมได้จึงเป็น -km <ชื่อ mount path>
+> -k คือ kill process -m คือ mount path สามารถใช้รวมได้จึงเป็น -km <ชื่อ mount path>
 
 ในกรณีที่ยัง unmount ไม่ได้ให้ลองใช้ Lazy Unmount คำสั่งคือ
 ```bash
